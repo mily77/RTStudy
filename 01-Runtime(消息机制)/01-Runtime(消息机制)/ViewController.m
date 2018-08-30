@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <objc/message.h>
+#import "Person.h"
+
 /*
      runtime:必须要导入头文件 <objc/message.h>
      任何方法调用本质：发送一个消息，用runtime发送消息，OC底层实现通过runtime实现
@@ -35,17 +37,34 @@
     
     // Xcode6苹果不推荐我们使用runtime
     
-    
-//    id obj = [NSObject alloc];
-    id objc = objc_msgSend([NSObject class],@selector(alloc));
-
-//    objc = [obj init];
-    objc = objc_msgSend(objc,@selector(init));
-    
     // 最终生成消息机制，编译器做的事情
     // 最终代码，需要把当前代码重新编译，用Xcode编译，clang
     // clang -rewrite-objc main.m 查看最终生成代码
+    
+    /*
+     需要用到runtime，消息机制
+     不得不用runtime消息机制，可以调用私有方法
+     */
+    
+    
+//    Person *p = [[Person alloc] init];
+    Person *p = objc_msgSend(objc_getClass("Person"), sel_registerName("alloc"));
+    
+    p = [p init];
+    objc_msgSend(p, sel_registerName("init"));
+    
+    // 调用eat
+    objc_msgSend(p, @selector(eat));
+    objc_msgSend(p, @selector(run:),18);
+    
 }
 
+-(void)test {
+    //    id obj = [NSObject alloc];
+    id objc = objc_msgSend([NSObject class],@selector(alloc));
+    
+    //    objc = [obj init];
+    objc = objc_msgSend(objc,@selector(init));
+}
 
 @end

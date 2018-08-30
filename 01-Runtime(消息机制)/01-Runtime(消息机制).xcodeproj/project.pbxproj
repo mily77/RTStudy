@@ -15,6 +15,7 @@
 		A1CD13252137955900550346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CD13242137955900550346 /* main.m */; };
 		A1CD132F2137955900550346 /* _1_Runtime______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CD132E2137955900550346 /* _1_Runtime______Tests.m */; };
 		A1CD133A2137955900550346 /* _1_Runtime______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CD13392137955900550346 /* _1_Runtime______UITests.m */; };
+		A1CD13492137DB0D00550346 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CD13482137DB0D00550346 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A1CD13352137955900550346 /* 01-Runtime(消息机制)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-Runtime(消息机制)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CD13392137955900550346 /* _1_Runtime______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1_Runtime______UITests.m"; sourceTree = "<group>"; };
 		A1CD133B2137955900550346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CD13472137DB0D00550346 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A1CD13482137DB0D00550346 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				A1CD13202137955900550346 /* LaunchScreen.storyboard */,
 				A1CD13232137955900550346 /* Info.plist */,
 				A1CD13242137955900550346 /* main.m */,
+				A1CD13472137DB0D00550346 /* Person.h */,
+				A1CD13482137DB0D00550346 /* Person.m */,
 			);
 			path = "01-Runtime(消息机制)";
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			files = (
 				A1CD131A2137955800550346 /* ViewController.m in Sources */,
 				A1CD13252137955900550346 /* main.m in Sources */,
+				A1CD13492137DB0D00550346 /* Person.m in Sources */,
 				A1CD13172137955800550346 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
