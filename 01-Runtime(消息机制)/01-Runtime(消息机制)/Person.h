@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)run:(NSInteger)metre;
 
-//-(void)eat;
+-(void)eat;
 
 @end
 
