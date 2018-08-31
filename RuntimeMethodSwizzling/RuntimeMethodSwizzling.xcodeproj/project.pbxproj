@@ -15,6 +15,8 @@
 		A1617F6921393376008AECAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F6821393376008AECAF /* main.m */; };
 		A1617F7321393376008AECAF /* RuntimeMethodSwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F7221393376008AECAF /* RuntimeMethodSwizzlingTests.m */; };
 		A1617F7E21393376008AECAF /* RuntimeMethodSwizzlingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F7D21393376008AECAF /* RuntimeMethodSwizzlingUITests.m */; };
+		A1617F8D213934A0008AECAF /* HSxImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F8C213934A0008AECAF /* HSxImage.m */; };
+		A1617F90213935EB008AECAF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F8F213935EB008AECAF /* UIImage+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A1617F7921393376008AECAF /* RuntimeMethodSwizzlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeMethodSwizzlingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1617F7D21393376008AECAF /* RuntimeMethodSwizzlingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMethodSwizzlingUITests.m; sourceTree = "<group>"; };
 		A1617F7F21393376008AECAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1617F8B213934A0008AECAF /* HSxImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSxImage.h; sourceTree = "<group>"; };
+		A1617F8C213934A0008AECAF /* HSxImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSxImage.m; sourceTree = "<group>"; };
+		A1617F8E213935EB008AECAF /* UIImage+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		A1617F8F213935EB008AECAF /* UIImage+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +111,15 @@
 				A1617F5A21393374008AECAF /* AppDelegate.m */,
 				A1617F5C21393374008AECAF /* ViewController.h */,
 				A1617F5D21393374008AECAF /* ViewController.m */,
+				A1617F8E213935EB008AECAF /* UIImage+Image.h */,
+				A1617F8F213935EB008AECAF /* UIImage+Image.m */,
 				A1617F5F21393374008AECAF /* Main.storyboard */,
 				A1617F6221393376008AECAF /* Assets.xcassets */,
 				A1617F6421393376008AECAF /* LaunchScreen.storyboard */,
 				A1617F6721393376008AECAF /* Info.plist */,
 				A1617F6821393376008AECAF /* main.m */,
+				A1617F8B213934A0008AECAF /* HSxImage.h */,
+				A1617F8C213934A0008AECAF /* HSxImage.m */,
 			);
 			path = RuntimeMethodSwizzling;
 			sourceTree = "<group>";
@@ -263,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1617F5E21393374008AECAF /* ViewController.m in Sources */,
+				A1617F90213935EB008AECAF /* UIImage+Image.m in Sources */,
 				A1617F6921393376008AECAF /* main.m in Sources */,
 				A1617F5B21393374008AECAF /* AppDelegate.m in Sources */,
+				A1617F8D213934A0008AECAF /* HSxImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
