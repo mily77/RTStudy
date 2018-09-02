@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+
+
 /*
  Runtime(交换方法)：只要想修改系统的方法实现
  
@@ -24,6 +27,15 @@
  
  */
 
+/*
+ runtime(动态添加方法)：OC都是懒加载机制，只要一个方法实现了，就会马上添加到方法列表中，
+ app:免费版，收费版
+ 
+ 美团有个面试题？有没有使用过performSelector,什么时候使用？动态添加方法时候使用过？怎么动态添加方法？用runtime？为什么要动态添加方法？
+ 
+ */
+
+
 @interface ViewController ()
 
 @end
@@ -34,6 +46,10 @@
     [super viewDidLoad];
     // 调用imageNamed => hsx_imageNamed 交换这两个方法实现
     UIImage *image = [UIImage imageNamed:@"1.png"];
+    
+    Person *p = [[Person alloc] init];
+    
+    [p performSelector:@selector(eat)];
 }
 
 

@@ -17,6 +17,7 @@
 		A1617F7E21393376008AECAF /* RuntimeMethodSwizzlingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F7D21393376008AECAF /* RuntimeMethodSwizzlingUITests.m */; };
 		A1617F8D213934A0008AECAF /* HSxImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F8C213934A0008AECAF /* HSxImage.m */; };
 		A1617F90213935EB008AECAF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F8F213935EB008AECAF /* UIImage+Image.m */; };
+		A1617F9321394267008AECAF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F9221394267008AECAF /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		A1617F8C213934A0008AECAF /* HSxImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSxImage.m; sourceTree = "<group>"; };
 		A1617F8E213935EB008AECAF /* UIImage+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		A1617F8F213935EB008AECAF /* UIImage+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		A1617F9121394267008AECAF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A1617F9221394267008AECAF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				A1617F5A21393374008AECAF /* AppDelegate.m */,
 				A1617F5C21393374008AECAF /* ViewController.h */,
 				A1617F5D21393374008AECAF /* ViewController.m */,
+				A1617F9121394267008AECAF /* Person.h */,
+				A1617F9221394267008AECAF /* Person.m */,
 				A1617F8E213935EB008AECAF /* UIImage+Image.h */,
 				A1617F8F213935EB008AECAF /* UIImage+Image.m */,
 				A1617F5F21393374008AECAF /* Main.storyboard */,
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1617F9321394267008AECAF /* Person.m in Sources */,
 				A1617F5E21393374008AECAF /* ViewController.m in Sources */,
 				A1617F90213935EB008AECAF /* UIImage+Image.m in Sources */,
 				A1617F6921393376008AECAF /* main.m in Sources */,
