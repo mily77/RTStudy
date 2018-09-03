@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A121D102213CCC340051D5D2 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A121D101213CCC340051D5D2 /* NSObject+Property.m */; };
 		A1617F5B21393374008AECAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F5A21393374008AECAF /* AppDelegate.m */; };
 		A1617F5E21393374008AECAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1617F5D21393374008AECAF /* ViewController.m */; };
 		A1617F6121393374008AECAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1617F5F21393374008AECAF /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A121D100213CCC330051D5D2 /* NSObject+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		A121D101213CCC340051D5D2 /* NSObject+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A1617F5621393374008AECAF /* RuntimeMethodSwizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeMethodSwizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1617F5921393374008AECAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1617F5A21393374008AECAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				A1617F5C21393374008AECAF /* ViewController.h */,
 				A1617F5D21393374008AECAF /* ViewController.m */,
 				A1617F9121394267008AECAF /* Person.h */,
+				A121D100213CCC330051D5D2 /* NSObject+Property.h */,
+				A121D101213CCC340051D5D2 /* NSObject+Property.m */,
 				A1617F9221394267008AECAF /* Person.m */,
 				A1617F8E213935EB008AECAF /* UIImage+Image.h */,
 				A1617F8F213935EB008AECAF /* UIImage+Image.m */,
@@ -279,6 +284,7 @@
 			files = (
 				A1617F9321394267008AECAF /* Person.m in Sources */,
 				A1617F5E21393374008AECAF /* ViewController.m in Sources */,
+				A121D102213CCC340051D5D2 /* NSObject+Property.m in Sources */,
 				A1617F90213935EB008AECAF /* UIImage+Image.m in Sources */,
 				A1617F6921393376008AECAF /* main.m in Sources */,
 				A1617F5B21393374008AECAF /* AppDelegate.m in Sources */,

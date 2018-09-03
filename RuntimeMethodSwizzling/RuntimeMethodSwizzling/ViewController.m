@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
-
+#import "NSObject+Property.h"
 
 /*
  Runtime(交换方法)：只要想修改系统的方法实现
@@ -35,6 +35,21 @@
  
  */
 
+/*
+ 动态添加属性：什么时候需要动态添加属性
+ 
+ 开发场景
+ 给系统的类添加属性的时候，可以使用runtime动态添加属性方法
+ 
+ 本质：动态添加属性，就是让某个属性与对象产生关联
+ 
+ 需求：让一个NSObject类 保存一个字符串
+ 
+ runtime 一般都是针对系统的类
+ 
+ 
+ */
+
 
 @interface ViewController ()
 
@@ -47,9 +62,18 @@
     // 调用imageNamed => hsx_imageNamed 交换这两个方法实现
     UIImage *image = [UIImage imageNamed:@"1.png"];
     
-    Person *p = [[Person alloc] init];
     
+    Person *p = [[Person alloc] init];
     [p performSelector:@selector(eat)];
+    
+    
+    
+    NSObject *obj = [[NSObject alloc] init];
+    
+    obj.name = @"123";
+    
+    NSLog(@"%@",obj.name);
+    
 }
 
 
