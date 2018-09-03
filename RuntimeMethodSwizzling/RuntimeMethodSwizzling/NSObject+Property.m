@@ -11,11 +11,10 @@
 
 @implementation NSObject (Property)
 
-static NSString *_name;
 
 -(void)setName:(NSString *)name {
     // 让这个字符串与当前对象产生联系
-    _name = name;
+    
     // object：给哪个对象添加属性
     // key：属性名称
     // value:属性值
