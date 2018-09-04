@@ -19,6 +19,7 @@
     [super viewDidLoad];
    
     Person *p = [[Person alloc] init];
+    
     [p test];
 }
 
