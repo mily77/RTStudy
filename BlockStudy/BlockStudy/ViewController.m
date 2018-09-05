@@ -15,14 +15,25 @@
  2.block定义
  3.block类型
  4.block调用
- 
  */
+// BlockType:类型别名
+typedef void(^BlockType)();
+
 
 @interface ViewController ()
-
+// block怎么声明，就如何定义成属性
+@property (nonatomic, strong) void(^block)();
+//@property (nonatomic, strong) BlockType block6;
 @end
 
 @implementation ViewController
+/*
+ block使用场景
+  1.在一个方法中定义，在另一个方法调用
+  2.在一个类中定义，在另外一个类中调用
+ 需求：
+  1.tableView展示3个cell 打电话，发短信，发邮件
+ */
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,9 +67,18 @@
 //        <#statements#>
 //    };
     
+    
+    void(^block5)() = ^{
+        NSLog(@"");
+    };
+    _block = block5;
+    
 }
 
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    // block调用：就去寻找保存代码，直接调用
+    _block(); // 场景一
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

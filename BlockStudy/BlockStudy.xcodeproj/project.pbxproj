@@ -15,6 +15,8 @@
 		A18E017E213FC9A6007A79C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E017D213FC9A6007A79C4 /* main.m */; };
 		A18E0188213FC9A6007A79C4 /* BlockStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E0187213FC9A6007A79C4 /* BlockStudyTests.m */; };
 		A18E0193213FC9A6007A79C4 /* BlockStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E0192213FC9A6007A79C4 /* BlockStudyUITests.m */; };
+		A18E01A2213FD6A8007A79C4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E01A1213FD6A8007A79C4 /* TableViewController.m */; };
+		A18E01A5213FD84A007A79C4 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E01A4213FD84A007A79C4 /* CellItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A18E018E213FC9A6007A79C4 /* BlockStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18E0192213FC9A6007A79C4 /* BlockStudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStudyUITests.m; sourceTree = "<group>"; };
 		A18E0194213FC9A6007A79C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18E01A0213FD6A8007A79C4 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A18E01A1213FD6A8007A79C4 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		A18E01A3213FD84A007A79C4 /* CellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellItem.h; sourceTree = "<group>"; };
+		A18E01A4213FD84A007A79C4 /* CellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				A18E0179213FC9A6007A79C4 /* LaunchScreen.storyboard */,
 				A18E017C213FC9A6007A79C4 /* Info.plist */,
 				A18E017D213FC9A6007A79C4 /* main.m */,
+				A18E01A0213FD6A8007A79C4 /* TableViewController.h */,
+				A18E01A1213FD6A8007A79C4 /* TableViewController.m */,
+				A18E01A3213FD84A007A79C4 /* CellItem.h */,
+				A18E01A4213FD84A007A79C4 /* CellItem.m */,
 			);
 			path = BlockStudy;
 			sourceTree = "<group>";
@@ -264,7 +274,9 @@
 			files = (
 				A18E0173213FC9A4007A79C4 /* ViewController.m in Sources */,
 				A18E017E213FC9A6007A79C4 /* main.m in Sources */,
+				A18E01A5213FD84A007A79C4 /* CellItem.m in Sources */,
 				A18E0170213FC9A4007A79C4 /* AppDelegate.m in Sources */,
+				A18E01A2213FD6A8007A79C4 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
