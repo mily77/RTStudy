@@ -21,8 +21,12 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // 传值给ViewController
-    if ([_delegate respondsToSelector:@selector(modalViewController:sendValue:)]) {
-        [_delegate modalViewController:self sendValue:@"123"];
+//    if ([_delegate respondsToSelector:@selector(modalViewController:sendValue:)]) {
+//        [_delegate modalViewController:self sendValue:@"123"];
+//    }
+    
+    if (_block) {
+        _block(@"123");
     }
 }
 

@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-@class ModalViewController;
-@protocol ModalViewControllerDelegate <NSObject>
-@optional
-// 设计方法：想要代理做什么事情
--(void)modalViewController:(ModalViewController *)modalVC sendValue:(NSString *)value;
-@end
+//@class ModalViewController;
+//@protocol ModalViewControllerDelegate <NSObject>
+//@optional
+//// 设计方法：想要代理做什么事情
+//-(void)modalViewController:(ModalViewController *)modalVC sendValue:(NSString *)value;
+//@end
 
 @interface ModalViewController : UIViewController
-@property (nonatomic, weak) id delegate;
+
+@property (nonatomic, strong) void(^block)(NSString *value);
+
+//@property (nonatomic, weak) id<ModalViewControllerDelegate> delegate;
 @end

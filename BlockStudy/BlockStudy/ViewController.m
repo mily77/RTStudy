@@ -21,7 +21,7 @@
 typedef void(^BlockType)();
 
 
-@interface ViewController ()<ModalViewControllerDelegate>
+@interface ViewController ()/*<ModalViewControllerDelegate>*/
 // block怎么声明，就如何定义成属性
 @property (nonatomic, strong) void(^block)();
 //@property (nonatomic, strong) BlockType block6;
@@ -88,12 +88,15 @@ typedef void(^BlockType)();
     
     ModalViewController *modalVC = [[ModalViewController alloc] init];
     modalVC.view.backgroundColor = [UIColor brownColor];
-    modalVC.delegate = self;
+//    modalVC.delegate = self;
+    modalVC.block = ^(NSString *value) {
+        NSLog(@"value = %@",value);
+    };
     // 跳转
     [self presentViewController:modalVC animated:YES completion:nil];
 }
--(void)modalViewController:(ModalViewController *)modalVC sendValue:(NSString *)vlaue{
-    NSLog(@"value = %@",vlaue);
-}
+//-(void)modalViewController:(ModalViewController *)modalVC sendValue:(NSString *)vlaue{
+//    NSLog(@"value = %@",vlaue);
+//}
 
 @end
