@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ModalViewController.h"
 
 /*
  block作用：保存一段代码
@@ -20,7 +21,7 @@
 typedef void(^BlockType)();
 
 
-@interface ViewController ()
+@interface ViewController ()<ModalViewControllerDelegate>
 // block怎么声明，就如何定义成属性
 @property (nonatomic, strong) void(^block)();
 //@property (nonatomic, strong) BlockType block6;
@@ -31,8 +32,14 @@ typedef void(^BlockType)();
  block使用场景
   1.在一个方法中定义，在另一个方法调用
   2.在一个类中定义，在另外一个类中调用
+ 
+ 
  需求：
   1.tableView展示3个cell 打电话，发短信，发邮件
+ 
+ 传值：1.只要能拿到对方就能传值
+ 顺传：给需要传值的对象，直接定义属性就能传值
+ 逆传：用代理，block，就是利用block去代替代理
  */
 
 - (void)viewDidLoad {
@@ -78,11 +85,15 @@ typedef void(^BlockType)();
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     // block调用：就去寻找保存代码，直接调用
     _block(); // 场景一
+    
+    ModalViewController *modalVC = [[ModalViewController alloc] init];
+    modalVC.view.backgroundColor = [UIColor brownColor];
+    modalVC.delegate = self;
+    // 跳转
+    [self presentViewController:modalVC animated:YES completion:nil];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)modalViewController:(ModalViewController *)modalVC sendValue:(NSString *)vlaue{
+    NSLog(@"value = %@",vlaue);
 }
-
 
 @end
