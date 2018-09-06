@@ -70,11 +70,18 @@ typedef void(^BlockType)();
     // block声明：返回值(^block变量名)(参数)
     void(^block)();
     
+    int a = 3;
+//    static int a = 3;
+//    __block int a = 3
+    // 如果是局部变量，Block是值传递
+    // 如果是静态变量，全局变量，__block修饰的变量，block都是指针传递
+    
     // block定义：三种方式 = ^(参数){};
     // 第一种
     void(^block1)() = ^{
-        NSLog(@"调用了block1");
+        NSLog(@"%d",a);
     };
+    a = 5;
     // 第二种 如果没有参数，参数可以隐藏,如果有参娄，定义的时候，必须要写参数，而且必须有参数变量名
     void(^block2)(int) = ^(int a){
         
