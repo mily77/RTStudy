@@ -18,6 +18,7 @@
 		A18E01A2213FD6A8007A79C4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E01A1213FD6A8007A79C4 /* TableViewController.m */; };
 		A18E01A5213FD84A007A79C4 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E01A4213FD84A007A79C4 /* CellItem.m */; };
 		A18E01A8213FDF73007A79C4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E01A7213FDF73007A79C4 /* ModalViewController.m */; };
+		A1B436B32140D32D00C656D1 /* CacultorManage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B436B22140D32D00C656D1 /* CacultorManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		A18E01A4213FD84A007A79C4 /* CellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
 		A18E01A6213FDF73007A79C4 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		A18E01A7213FDF73007A79C4 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		A1B436B12140D32D00C656D1 /* CacultorManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacultorManage.h; sourceTree = "<group>"; };
+		A1B436B22140D32D00C656D1 /* CacultorManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacultorManage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				A18E016F213FC9A4007A79C4 /* AppDelegate.m */,
 				A18E0171213FC9A4007A79C4 /* ViewController.h */,
 				A18E0172213FC9A4007A79C4 /* ViewController.m */,
+				A1B436B12140D32D00C656D1 /* CacultorManage.h */,
+				A1B436B22140D32D00C656D1 /* CacultorManage.m */,
 				A18E0174213FC9A4007A79C4 /* Main.storyboard */,
 				A18E0177213FC9A6007A79C4 /* Assets.xcassets */,
 				A18E0179213FC9A6007A79C4 /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 				A18E017E213FC9A6007A79C4 /* main.m in Sources */,
 				A18E01A8213FDF73007A79C4 /* ModalViewController.m in Sources */,
 				A18E01A5213FD84A007A79C4 /* CellItem.m in Sources */,
+				A1B436B32140D32D00C656D1 /* CacultorManage.m in Sources */,
 				A18E0170213FC9A4007A79C4 /* AppDelegate.m in Sources */,
 				A18E01A2213FD6A8007A79C4 /* TableViewController.m in Sources */,
 			);

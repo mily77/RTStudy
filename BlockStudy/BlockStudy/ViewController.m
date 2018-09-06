@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ModalViewController.h"
-
+#import "CacultorManage.h"
 /*
  block作用：保存一段代码
  
@@ -109,6 +109,30 @@ typedef void(^BlockType)();
         NSLog(@"");
     };
     _block = block5;
+    
+    
+    // 怎么区分参数是block，就看有没有^,把block当做参数
+    // 把block当做参数，并不是马上就调用block，什么时候调用，由方法内部决定
+    // 什么时候需要把block当做参数去使用:做的事情由外界决定，但是什么时候做由内部决定
+    /*
+     
+     需求：封装一个计算器，提供一个计算方法，怎么计算由外界决定，什么时候计算由内部决定
+     
+     */
+    CacultorManage *mgr = [[CacultorManage alloc] init];
+    [mgr cacultor:^NSInteger(NSInteger result) {
+        result += 5;
+        result += 6;
+        result *= 5;
+        return result;
+    }];
+    /*
+     链式编程思想：把所有的语句.号连接起来，好处:可读性非常好
+     */
+    //+5
+    mgr.add(5).add(5).add(5).add(5);
+//    [[[[[mgr add:5] add:5] add:5] add:5] add:7];
+    NSLog(@"%ld",(long)mgr.result);
     
 }
 
