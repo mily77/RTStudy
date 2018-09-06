@@ -56,8 +56,9 @@ typedef void(^BlockType)();
  block只能使用copy,不能使用retain 使用retain block还是在栈里面
  
  
- ARC:
- 
+ ARC:管理block
+     只要block引用外部局部变量，block放在堆里面
+     block使用strong，最好不要使用copy
  */
 
 - (void)viewDidLoad {
