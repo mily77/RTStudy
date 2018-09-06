@@ -59,6 +59,10 @@ typedef void(^BlockType)();
  ARC:管理block
      只要block引用外部局部变量，block放在堆里面
      block使用strong，最好不要使用copy
+
+ 循环引用：我引用你，你也引用，就会造成循环引用，双方都不会被销毁，导致内存泄漏问题
+
+
  */
 
 - (void)viewDidLoad {

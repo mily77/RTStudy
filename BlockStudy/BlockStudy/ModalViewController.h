@@ -17,6 +17,7 @@
 @interface ModalViewController : UIViewController
 
 @property (nonatomic, strong) void(^block)(NSString *value);
+@property (nonatomic, strong) void(^block1)();
 
 //@property (nonatomic, weak) id<ModalViewControllerDelegate> delegate;
 @end

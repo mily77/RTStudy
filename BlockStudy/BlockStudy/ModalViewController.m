@@ -14,9 +14,23 @@
 
 @implementation ModalViewController
 
+-(void)dealloc {
+    NSLog(@"modalVC销毁");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // block造成循环引用：block会对里面所有强指针变量都强引用一次
+    __weak typeof(self) weakSelf = self;
+    _block1 = ^{
+//        NSLog(@"%@",self);
+        NSLog(@"%@",weakSelf);
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"%@",strongSelf);
+        });
+    };
+    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -28,6 +42,8 @@
     if (_block) {
         _block(@"123");
     }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
